@@ -125,7 +125,7 @@
 
 #include <DNSServer.h>
 #include <memory>
-#include "strings_en.h"
+#include "strings_es.h"
 
 #ifndef WIFI_MANAGER_MAX_PARAMS
     #define WIFI_MANAGER_MAX_PARAMS 5 // params will autoincrement and realloc by this amount when max is reached
