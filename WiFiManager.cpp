@@ -1275,12 +1275,12 @@ void WiFiManager::handleRoot() {
   if (captivePortal()) return; // If captive portal redirect instead of displaying the page
   handleRequest();
   String page = getHTTPHead(_title); // @token options @todo replace options with title
-  String str  = FPSTR(HTTP_ROOT_MAIN); // @todo custom title
+  // String str  = FPSTR(HTTP_ROOT_MAIN); // @todo custom title
   // str.replace(FPSTR(T_t),_title);
   // str.replace(FPSTR(T_v),configPortalActive ? _apName : (getWiFiHostname() + " - " + WiFi.localIP().toString())); // use ip if ap is not active for heading @todo use hostname?
-  page += str;
-  page += FPSTR(HTTP_PORTAL_OPTIONS);
-  page += getMenuOut();
+  // page += str;
+  page += FPSTR(HTTP_PORTAL_ECOFROST);
+  // page += getMenuOut();
   reportStatus(page);
   page += FPSTR(HTTP_END);
 
